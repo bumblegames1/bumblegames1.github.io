@@ -3,12 +3,87 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>НАЗВАНИЕ ИГРЫ</title>
+  <title>BumbleGames</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      background: linear-gradient(135deg, #1e1b4b, #312e81 50%, #4c1d95);
+      color: #f5f3ff;
+      padding: 24px;
+    }
+
+    .card {
+      max-width: 520px;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 20px;
+      padding: 40px 32px;
+      text-align: center;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+    }
+
+    .studio {
+      font-size: 14px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: #c4b5fd;
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      font-size: 36px;
+      font-weight: 800;
+      margin-bottom: 16px;
+    }
+
+    .description {
+      font-size: 17px;
+      line-height: 1.6;
+      color: #ddd6fe;
+      margin-bottom: 28px;
+    }
+
+    .links a {
+      display: inline-block;
+      margin: 6px;
+      padding: 12px 22px;
+      border-radius: 12px;
+      background: #a78bfa;
+      color: #1e1b4b;
+      text-decoration: none;
+      font-weight: 600;
+      transition: transform 0.15s, background 0.15s;
+    }
+
+    .links a:hover {
+      transform: translateY(-2px);
+      background: #c4b5fd;
+    }
+
+    footer {
+      margin-top: 28px;
+      font-size: 13px;
+      color: #a5b4fc;
+    }
+  </style>
 </head>
 <body>
-  <h1>НАЗВАНИЕ ИГРЫ</h1>
-  <p>КОРОТКОЕ ОПИСАНИЕ ИГРЫ.</p>
-  <p>Разработчик: YaGe Games</p>
-  <p><a href="https://bumblegames1.github.io/privacy-policy/">Политика конфиденциальности</a></p>
+  <main class="card">
+    <p class="studio">BumbleGames</p>
+    <h1>Маджонг: собери три</h1>
+    <p class="description">Собирай по три одинаковые плитки и очищай поле! Фрукты, животные, сотни уровней.</p>
+    <div class="links">
+      <a href="https://bumblegames1.github.io/privacy-policy/">Политика конфиденциальности</a>
+    </div>
+    <footer>© 2026 BumbleGames</footer>
+  </main>
 </body>
 </html>
